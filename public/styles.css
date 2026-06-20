@@ -1527,3 +1527,129 @@ button {
     text-align: center;
   }
 }
+
+@media (max-width: 620px) {
+  .product-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px 10px;
+  }
+
+  .product-card {
+    background: #fffaf3;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 14px;
+    box-shadow: none;
+    overflow: hidden;
+  }
+
+  .product-card:hover {
+    transform: none;
+    box-shadow: none;
+  }
+
+  .product-image {
+    aspect-ratio: 3 / 4;
+    border-radius: 0;
+    overflow: hidden;
+    background: #f4eee4;
+  }
+
+  .product-image-button {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    background: #f4eee4;
+  }
+
+  .product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .product-body {
+    padding: 8px 8px 10px;
+  }
+
+  .product-topline {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-bottom: 6px;
+  }
+
+  .product-topline span {
+    font-size: 0.55rem;
+    padding: 3px 6px;
+    border-radius: 999px;
+  }
+
+  .product-name {
+    display: block;
+    font-size: 0.7rem;
+    line-height: 1.15;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.01em;
+    margin: 0 0 4px;
+    min-height: 32px;
+  }
+
+  .product-description {
+    display: -webkit-box;
+    font-size: 0.62rem;
+    line-height: 1.25;
+    color: #6f6253;
+    margin: 0 0 6px;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .product-price {
+    display: block;
+    font-size: 0.82rem;
+    margin: 4px 0 7px;
+    font-weight: 800;
+    color: #0b0b0b;
+  }
+
+  .size-label {
+    display: block;
+    font-size: 0.58rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    margin-bottom: 4px;
+  }
+
+  .size-select {
+    display: block;
+    width: 100%;
+    height: 30px;
+    font-size: 0.68rem;
+    padding: 4px 7px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+  }
+
+  .add-button {
+    display: flex;
+    width: 100%;
+    height: 32px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    font-size: 0.64rem;
+    font-weight: 800;
+    padding: 0 6px;
+  }
+
+  .product-ribbon {
+    display: block;
+    top: 8px;
+    left: 8px;
+    font-size: 0.55rem;
+    padding: 4px 8px;
+    border-radius: 999px;
+  }
+}
