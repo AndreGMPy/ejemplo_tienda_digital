@@ -4,7 +4,7 @@
   "description": "Tienda digital básica con apariencia comercial, catálogo dinámico, carrito y pedido por WhatsApp.",
   "main": "backend/server.js",
   "scripts": {
-    "start": "node backend/server.js",
+    "start": "node server.js",
     "dev": "node --watch backend/server.js"
   },
   "keywords": [
@@ -24,6 +24,6 @@
     "express": "^4.21.2"
   },
   "engines": {
-    "node": ">=18"
+    "node": "20.x"
   }
 }
