@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1100">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#24160d"/><stop offset="0.55" stop-color="#0c0c0c"/><stop offset="1" stop-color="#3b291b"/></linearGradient>
+    <radialGradient id="g1" cx="70%" cy="22%" r="55%"><stop offset="0" stop-color="#d9aa55" stop-opacity=".38"/><stop offset="1" stop-color="#d9aa55" stop-opacity="0"/></radialGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="24" stdDeviation="28" flood-color="#000" flood-opacity=".35"/></filter>
+  </defs>
+  <rect width="1600" height="1100" fill="url(#bg)"/>
+  <rect width="1600" height="1100" fill="url(#g1)"/>
+  <g opacity=".24" fill="none" stroke="#ffffff" stroke-width="2">
+    <path d="M0 760 C350 650 500 850 850 720 S1280 520 1600 640"/>
+    <path d="M0 830 C380 730 540 930 900 800 S1320 600 1600 720"/>
+  </g>
+  <g transform="translate(1000 120) rotate(-7)" filter="url(#shadow)">
+    <rect x="0" y="0" width="360" height="500" rx="38" fill="#f5efe6"/>
+    <path d="M150 84 h60 l52 48 58 12 -28 92 -66 -26 v216 h-152 v-216 l-66 26 -28 -92 58 -12z" fill="#191919"/>
+    <path d="M140 284 h100" stroke="#f4d58b" stroke-width="16" stroke-linecap="round"/>
+    <text x="180" y="462" text-anchor="middle" font-family="Inter,Arial" font-size="38" font-weight="900" fill="#17120d">NEW</text>
+  </g>
+  <g transform="translate(1135 470) rotate(8)" filter="url(#shadow)">
+    <rect x="0" y="0" width="300" height="410" rx="34" fill="#fffaf2"/>
+    <path d="M122 72 h52 l45 42 48 10 -24 78 -54 -22 v176 h-130 v-176 l-54 22 -24 -78 48 -10z" fill="#d9d0c1"/>
+    <circle cx="150" cy="228" r="44" fill="#b9802a" opacity=".3"/>
+    <text x="150" y="374" text-anchor="middle" font-family="Inter,Arial" font-size="28" font-weight="900" fill="#17120d">DROP</text>
+  </g>
+</svg>

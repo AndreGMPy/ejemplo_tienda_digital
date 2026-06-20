@@ -1,0 +1,29 @@
+{
+  "name": "ejemplo-tienda-digital-basica",
+  "version": "1.0.0",
+  "description": "Tienda digital básica con apariencia comercial, catálogo dinámico, carrito y pedido por WhatsApp.",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "node --watch backend/server.js"
+  },
+  "keywords": [
+    "tienda-digital",
+    "ecommerce",
+    "catalogo",
+    "whatsapp",
+    "google-sheets",
+    "node",
+    "express",
+    "javascript"
+  ],
+  "author": "Ingenix Hub",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

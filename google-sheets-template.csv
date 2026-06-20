@@ -1,0 +1,9 @@
+Departamento,Categoría,Subcategoría,Nombre,Precio,Imagen,Tallas,Etiqueta,Descripción,Disponible,Orden
+Hombre,Ropa,Novedades,Playera oversized blanca,280,/assets/producto-demo-1.svg,"CH, M, G, XL",Nuevo,Playera cómoda de corte amplio,Sí,1
+Hombre,Ropa,Playeras,Playera gráfica negra,280,/assets/producto-demo-2.svg,"CH, M, G, XL",Más vendido,Playera con estampado para outfit urbano,Sí,2
+Hombre,Ropa,Sudaderas,Sudadera urbana negra,450,/assets/producto-demo-6.svg,"M, G, XL",Temporada,Sudadera ligera para uso diario,Sí,3
+Hombre,Ropa,Jeans,Jeans recto azul,520,/assets/producto-demo-4.svg,"28, 30, 32, 34",Básico,Jeans recto fácil de combinar,Sí,4
+Dama,Ropa,Novedades,Top básico beige,230,/assets/producto-demo-3.svg,"CH, M, G",Nuevo,Top fresco para combinar con jeans,Sí,5
+Dama,Ropa,Tops,Blusa casual blanca,290,/assets/producto-demo-1.svg,"CH, M, G",Básico,Blusa limpia para outfits cómodos,Sí,6
+Dama,Ropa,Vestidos,Vestido casual negro,480,/assets/producto-demo-2.svg,"CH, M, G",Favorito,Vestido casual para salida o reunión,Sí,7
+Dama,Accesorios,Bolsas,Bolsa mini café,350,/assets/producto-demo-3.svg,Unitalla,Accesorio,Bolsa compacta para uso diario,Sí,8

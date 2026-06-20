@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ejemplo de tienda digital básica con catálogo por departamentos, secciones, carrito de compra y pedido directo por WhatsApp." />
+  <title>Ejemplo de tienda digital básica</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="top-promo" role="banner">
+    <span>Envío local y pedidos por WhatsApp</span>
+    <strong>Nueva colección disponible</strong>
+  </div>
+
+  <header class="site-header" id="inicio">
+    <nav class="nav container" aria-label="Navegación principal">
+      <a class="brand" href="#inicio" aria-label="Ir al inicio">
+        <span class="brand-mark">TD</span>
+        <span class="brand-text">Ejemplo de tienda digital básica</span>
+      </a>
+
+      <button class="menu-button" id="menuButton" type="button" aria-label="Abrir menú" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#departamentos">Departamentos</a>
+        <button class="nav-action" type="button" data-department-link="Hombre">Hombre</button>
+        <button class="nav-action" type="button" data-department-link="Dama">Dama</button>
+        <a href="#novedades">Novedades</a>
+        <a href="#catalogo">Catálogo</a>
+        <button class="cart-link" id="openCartButton" type="button">Carrito <span id="cartBadge">0</span></button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-bg"></div>
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="eyebrow">Moda urbana · hombre · dama · básicos</p>
+          <h1>Una tienda digital lista para vender</h1>
+          <p class="hero-copy">Catálogo organizado como una tienda real: departamentos, subcategorías, productos destacados, carrito y pedido directo por WhatsApp.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#catalogo">Comprar ahora</a>
+            <a class="btn btn-secondary" href="#departamentos">Explorar secciones</a>
+          </div>
+        </div>
+
+        <div class="hero-showcase" aria-label="Productos destacados">
+          <div class="showcase-card main-product">
+            <span class="product-badge">Nuevo drop</span>
+            <img src="/assets/producto-demo-1.svg" alt="Playera oversized blanca">
+            <div>
+              <p>Oversized essentials</p>
+              <strong>Desde $249 MXN</strong>
+            </div>
+          </div>
+          <div class="mini-products">
+            <article>
+              <img src="/assets/producto-demo-2.svg" alt="Playera gráfica negra">
+              <span>Hombre</span>
+            </article>
+            <article>
+              <img src="/assets/producto-demo-3.svg" alt="Camisa casual premium">
+              <span>Dama</span>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="service-strip" id="beneficios" aria-label="Beneficios de compra">
+      <div class="container service-grid">
+        <div>
+          <strong>Catálogo ordenado</strong>
+          <span>Hombre, dama y subcategorías</span>
+        </div>
+        <div>
+          <strong>Compra rápida</strong>
+          <span>Carrito + pedido por WhatsApp</span>
+        </div>
+        <div>
+          <strong>Inventario actualizado</strong>
+          <span>Productos y precios al día</span>
+        </div>
+        <div>
+          <strong>Diseño responsive</strong>
+          <span>Se ve bien en celular</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="departamentos">
+      <div class="section-heading split-heading">
+        <div>
+          <p class="eyebrow dark-eyebrow">Compra por sección</p>
+          <h2>Departamentos principales</h2>
+        </div>
+        <p>La tienda separa el catálogo en Hombre y Dama. Dentro de cada departamento puedes mostrar playeras, pantalones, vestidos, accesorios, novedades y ofertas.</p>
+      </div>
+
+      <div class="department-grid">
+        <article class="department-card department-men">
+          <span>Hombre</span>
+          <h3>Playeras, jeans, sudaderas y básicos</h3>
+          <button class="btn btn-light" type="button" data-department-link="Hombre">Ver hombre</button>
+        </article>
+        <article class="department-card department-women">
+          <span>Dama</span>
+          <h3>Tops, vestidos, pantalones y accesorios</h3>
+          <button class="btn btn-light" type="button" data-department-link="Dama">Ver dama</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="section container" id="novedades">
+      <div class="section-heading split-heading">
+        <div>
+          <p class="eyebrow dark-eyebrow">Escaparate</p>
+          <h2>Colecciones y destacados</h2>
+        </div>
+        <p>Estas tarjetas ayudan a que la tienda se sienta más grande y comercial, como una página de moda real, sin explicar la parte técnica al cliente.</p>
+      </div>
+
+      <div class="lookbook-grid">
+        <article class="lookbook-card big-card">
+          <img src="/assets/producto-demo-4.svg" alt="Colección de básicos urbanos">
+          <div>
+            <span>Novedades</span>
+            <h3>Nuevos lanzamientos de temporada</h3>
+            <button type="button" data-subcategory-link="Novedades">Ver novedades</button>
+          </div>
+        </article>
+        <article class="lookbook-card dark-card">
+          <span>Hombre</span>
+          <h3>Playeras gráficas, oversized y looks casuales.</h3>
+          <button type="button" data-department-link="Hombre">Explorar</button>
+        </article>
+        <article class="lookbook-card light-card">
+          <span>Dama</span>
+          <h3>Prendas frescas, cómodas y fáciles de combinar.</h3>
+          <button type="button" data-department-link="Dama">Explorar</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="section catalog-section" id="catalogo">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow dark-eyebrow">Catálogo</p>
+          <h2>Elige tus prendas favoritas</h2>
+          <p>Filtra por departamento y subcategoría. Cada producto muestra precio, imagen, tallas, etiqueta y descripción para que la compra sea clara.</p>
+        </div>
+
+        <div class="catalog-layout">
+          <aside class="shop-sidebar" aria-label="Filtros rápidos">
+            <div class="sidebar-block">
+              <h3>Departamento</h3>
+              <div class="department-filters" id="departmentFilters"></div>
+            </div>
+            <div class="sidebar-block">
+              <h3>Subcategorías</h3>
+              <div class="subcategory-list" id="subcategoryFilters"></div>
+            </div>
+          </aside>
+
+          <div class="shop-content">
+            <div class="catalog-toolbar" aria-label="Herramientas del catálogo">
+              <label class="search-box" for="searchInput">
+                <span>Buscar producto</span>
+                <input id="searchInput" type="search" placeholder="Buscar playera, vestido, jeans..." autocomplete="off" />
+              </label>
+              <label class="sort-box" for="sortSelect">
+                <span>Ordenar</span>
+                <select id="sortSelect">
+                  <option value="featured">Destacados</option>
+                  <option value="price-asc">Precio: menor a mayor</option>
+                  <option value="price-desc">Precio: mayor a menor</option>
+                  <option value="name-asc">Nombre A-Z</option>
+                </select>
+              </label>
+            </div>
+
+            <div class="mobile-filter-row">
+              <div class="category-scroll" id="mobileDepartmentFilters" aria-label="Departamentos móviles"></div>
+              <div class="category-scroll" id="mobileSubcategoryFilters" aria-label="Subcategorías móviles"></div>
+            </div>
+
+            <div class="catalog-feedback" id="catalogFeedback" role="status"></div>
+            <div class="product-grid" id="productGrid" aria-live="polite"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="contacto">
+      <div class="contact-card">
+        <div>
+          <p class="eyebrow dark-eyebrow">Pedido personalizado</p>
+          <h2>¿Buscas otra talla, color o más piezas?</h2>
+          <p>Agrega productos al carrito y manda tu pedido. La tienda puede confirmar disponibilidad, colores y forma de entrega por WhatsApp.</p>
+        </div>
+        <button class="btn btn-primary" id="contactCartButton" type="button">Abrir carrito</button>
+      </div>
+    </section>
+  </main>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+    <div class="cart-backdrop" id="cartBackdrop"></div>
+    <section class="cart-panel" role="dialog" aria-modal="true" aria-labelledby="cartTitle">
+      <div class="cart-header">
+        <div>
+          <p class="eyebrow dark-eyebrow">Tu pedido</p>
+          <h2 id="cartTitle">Carrito de compra</h2>
+        </div>
+        <button class="icon-button" id="closeCartButton" type="button" aria-label="Cerrar carrito">×</button>
+      </div>
+      <div class="cart-items" id="cartItems"></div>
+      <div class="cart-footer">
+        <div class="cart-total"><span>Total estimado</span><strong id="cartTotal">$0</strong></div>
+        <div class="cart-actions">
+          <button class="btn btn-ghost" id="clearCartButton" type="button">Vaciar</button>
+          <button class="btn btn-primary" id="sendOrderButton" type="button">Pedir por WhatsApp</button>
+        </div>
+      </div>
+    </section>
+  </aside>
+
+  <button class="floating-cart" id="floatingCartButton" type="button" aria-label="Abrir carrito">
+    🛒 <span id="floatingCartCount">0</span>
+  </button>
+
+  <template id="productCardTemplate">
+    <article class="product-card">
+      <button class="product-image-button" type="button" aria-label="Ver imagen del producto">
+        <img class="product-image" alt="" loading="lazy" />
+        <span class="quick-view">Ver detalle</span>
+        <span class="product-ribbon"></span>
+      </button>
+      <div class="product-body">
+        <div class="product-topline">
+          <span class="product-department"></span>
+          <span class="product-category"></span>
+        </div>
+        <h3 class="product-name"></h3>
+        <p class="product-description"></p>
+        <div class="product-price"></div>
+        <label class="size-label">Talla
+          <select class="size-select"></select>
+        </label>
+        <button class="btn btn-dark add-button" type="button">Agregar al carrito</button>
+      </div>
+    </article>
+  </template>
+
+  <dialog class="image-dialog" id="imageDialog">
+    <button class="icon-button dialog-close" id="closeImageDialog" type="button" aria-label="Cerrar imagen">×</button>
+    <img id="dialogImage" alt="Imagen del producto" />
+  </dialog>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
